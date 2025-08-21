@@ -1,0 +1,109 @@
+*{
+    font-family: Arial, sans-serif;
+}
+#connect-center{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cursor{
+    cursor: pointer;
+}
+input{
+    box-shadow: 0 0 0 0 !important;
+    outline: 0 0 0 0 !important;
+
+}
+a{
+    font-family: verdana;
+}
+.h5 {
+    line-height: 1.6;
+}
+.span{
+    font-size: 1.2em;
+}
+.pointer{
+    cursor: pointer;
+}
+.nav-link{
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.carousel-caption{
+    font-family: cambria;
+    font-size: 14px;
+}
+.nav-link:hover{
+    cursor: pointer;
+    border-bottom: solid whitesmoke 2px;
+    transition: 0.3s;
+}
+.logo{
+    width: 4em;
+    height: 3.5em;
+}
+.name-logo{
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-left: 0.2em; 
+}
+.text-justify{
+    text-align: justify;
+}
+textarea{
+    box-shadow: 0 0 0 0 !important;
+    outline: 0 0 0 0 !important;
+    resize: none;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    /* Plus haut que les autres éléments */
+}
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    border: 0.6rem solid transparent;
+    border-top: 0.6rem solid #007bff;
+    /* Couleur 1 : Bleu */
+    border-bottom: 0.6rem solid #007bff;
+    /* Couleur 1 : Bleu */
+    border-left: 0.6rem solid #007bff;
+    /* Couleur 1 : Bleu */
+    border-right: 0.6rem solid transparent;
+    /* Couleur 2 : Rouge */
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+.carousel-item{
+    height: 35em;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.b{
+    font-weight: bold;
+}

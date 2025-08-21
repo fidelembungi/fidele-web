@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icons/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Profil de Fidèle MBUNGI TEKILAZAYA, développeur web fullstack à Kinshasa. 
+        Fondateur de FD Web. Spécialiste PHP, MySQL, Bootstrap.">
+    <meta name="keywords" content="Fidèle Mbungi, développeur Kinshasa, FD Web, développeur web Congo">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./media/u_images/Logo.png" type="image/png">
+    <title>Fidele Web | Accueil</title>
+</head>
+
+<body class="bg-success bg-opacity-25">
+
+    <div class="bg-success-subtle" id="loader">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div>
+                    <h1 class="text-center text-primary loader" style="font-size: 2.8em;"> FD Web </h1>
+                </div>
+            </div>
+            <div class="col-12 py-4 text-center">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2">
+                            <!-- Spinner de Bootstrap -->
+                            <div class="spinner p-4 d-flex justify-content-center " role="status">
+                                <i class="">
+
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center text-primary" style="font-size: 1.6em;">
+                        Veuillez patienter
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="visually lucida text-center py-2 text-primary" style="font-size: 1.1em;">
+                        En cours de chargement...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="content">
+        <div class="bg-success fixed-top">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="navbar col-lg-2 d-none d-lg-flex">
+                        <div class="d-flex align-items-center">
+                            <img src="./media/u_images/default.jpg" alt="Logos" id="logo"
+                                class="img-fluid rounded-circle logo">
+                            <span class="name-logo text-light navbar-brand">FD Web</span>
+                        </div>
+                    </div>
+                    <nav
+                        class="navbar navbar-expand-lg col-xs-12 col-sm-12 col-md-12 col-lg-9 d-flex justify-content-around text-end px-3">
+                        <div class="d-flex col-8 d-lg-none align-items-center align-self-start text-start">
+                            <img src="./media/u_images/default.jpg" alt="Logos" id="logo"
+                                class="img-fluid rounded-circle logo">
+                            <span class="name-logo text-light navbar-brand">FD Web</span>
+                        </div>
+                        <div class="justify-content-end col-4 col-lg-12">
+                            <button class="navbar-toggler mx-4 bg-light-subtle" data-bs-toggle="collapse"
+                                data-bs-target="#menu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse justify-content-end me-2" id="menu">
+                                <ul class="navbar-nav text-end align-items-center">
+                                    <li class="nav-item"><a class="nav-link text-light pointer m-2"
+                                            onclick="accueil();">Accueil</a></li>
+                                    <li class="nav-item"><a class="nav-link text-light pointer m-2"
+                                            onclick="services();">Sevices</a></li>
+                                    <li class="nav-item"><a class="nav-link text-light pointer m-2"
+                                            onclick="contacts();">Contacts</a></li>
+                                    <li class="nav-item"><a class="nav-link text-light pointer m-2"
+                                            onclick="apropos();">Apropos</a></li>
+                                    <li class="nav-item btn btn-outline-primary" id="Gerer" onclick="gerer();"><a
+                                            class="nav-link text-light pointer">Gérer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="carousel slide" id="carousel-acceuil" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-acceuil" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carousel-acceuil" data-bs-slide-to="1"
+                                    aria-label="Slide 2">
+                                </button>
+                                <button type="button" data-bs-target="#carousel-acceuil" data-bs-slide-to="2"
+                                    aria-label="Slide 3">
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./media/adds_img/carousel-color.png" class="h-100 w-100 rounded-4"
+                                        alt="e-commerce">
+                                    <div class="carousel-caption d-block">
+                                        <h3>Nous sommes ceux qui vous proposent des solutions informatique</h3>
+                                        <p class="lead">Nos solutions sont celles d'informatiser et d'automatiser</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./media/adds_img/carousels-color.png" class="h-100 w-100 rounded-4"
+                                        alt="e-commerce">
+                                    <div class="carousel-caption d-block">
+                                        <h3>Mise en place des sites et applications web
+                                        </h3>
+                                        <p class="lead">Conception des solutions informatique</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./media/adds_img/carousel-colors.png" class="h-100 w-100 rounded-4"
+                                        alt="e-commerce">
+                                    <div class="carousel-caption d-block">
+                                        <h3 class="h4">Nous sommes des analystes, concepteur et programmeur web</h3>
+                                        <p class="">
+                                            Vous êtes au bon endroit pour obtenir une solution informatique
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-acceuil"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-acceuil"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center pt-4 text-success pb-3 display-5">
+                        Nous vous acceuillons chez FD Web
+                    </h3>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row d-flex justify-content-around align-items-top py-3" id="paragraphes">
+                    </div>
+                    <div class="row d-flex justify-content-around align-items-top py-3" id="card_accueil">
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="fixed-bottom text-end deconnecter">
+            <button class="btn me-3 mb-5 btn-danger rounded" onclick="deconnexion();">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-sign-out"> </i>
+                    <span class="d-none d-md-flex">
+                        Déconnecter
+                    </span>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="">
+
+    </div>
+    <div class="container-fluid bg-success bg-opacity-50">
+        <div class="container py-4">
+            <div class="row">
+                <h3 class="h3 text-center">
+                    Laissez-nous un commentaire
+                </h3>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <form id="formulaire" class="row col-xs-12 col-sm-10 col-md-8 col-lg-7 p-4 shadow rounded-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-2">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success text-light">
+                                <i class="fa fa-user-o"> </i>
+                            </span>
+                            <input type="text" id="nom" placeholder="Noms" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-2">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success text-light">
+                                <i class="fa fa-google"> </i>
+                            </span>
+                            <input type="email" id="email" placeholder="E-mail (facultatif)" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-2 pb-4">
+                        <div class="input-group">
+                            <span class="input-group-text bg-success text-light">
+                                <i class="fa fa-commenting"> </i>
+                            </span>
+                            <textarea name="commentaire" class="form-control" id="commentaire"
+                                placeholder="Ecrivez votre commentaire ici" required></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center px-3">
+                        <button type="button" class="form-control btn btn-primary" onclick="commentaires();">
+                            <i class="fa fa-send pe-3"> </i>
+                            <span class="lead">
+                                Envoyer
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- dans le div ci-dessous que s'affiche les alert -->
+                    <div class="py-3" id="alert">
+
+                    </div>
+                </form>
+            </div>
+            <div class="row py-3">
+                <h3 class="h3 text-center">
+                    Les commentaires
+                </h3>
+            </div>
+            <div class="row d-flex justify-content-center py-2 pb-4" id="commentaires">
+                <!-- ici que s'affiche les commentaires -->
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/jquery.js"></script>
+    <script src="./controller/scripts.js"></script>
+    <script>
+        window.onload = function () {
+            Afficher_paragraphes();
+            Afficher_cards();
+            Afficher_commentaires();
+            validation();
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+
+                // Cacher le loader
+                document.getElementById('loader').style.display = 'none';
+                //afficher les contenus de la page
+                document.getElementById('content').style.display = 'block';
+
+            }); // 3 secondes de délai
+        });
+    </script>
+</body>
+
+</html>
