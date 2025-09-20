@@ -1,5 +1,5 @@
 function connecter() {
-	location.href = "./view/connect.html";
+	location.href = "./connect.html";
 }
 
 // fonction des messages
