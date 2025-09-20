@@ -1,5 +1,5 @@
 function connecter() {
-	location.href = "./connect.html";
+	location.href = "./view/connect.html";
 }
 
 // fonction des messages
@@ -76,7 +76,7 @@ function messages() {
 
 				$.ajax({
 
-					url: "./model/scripts.php",
+					url: "../model/scripts.php",
 					type: "POST",
 					data: {
 						"ent": "messages_ajout",
@@ -146,7 +146,7 @@ function connection() {
 	// condition pour tester le recupération des données dans les élément html
 	if (nom_utilisateur != '' && mot_de_passe != '') {
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				'ent': 'connexion',
@@ -167,7 +167,7 @@ function connection() {
 					sessionStorage.setItem('nom', data[1]);
 					sessionStorage.setItem('statut', data[2]);
 					sessionStorage.setItem('img', data[3]);
-					location.href = "./index.html";
+					location.href = "../index.html";
 
 				} else {
 					alert("Nom d'utilisateur ou Mot de passe incorrect");
@@ -187,7 +187,7 @@ function connection() {
 
 function selection(id) {
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'selectionner',
@@ -216,7 +216,7 @@ function selection(id) {
 
 function selection1(id) {
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'selectionner1',
@@ -243,7 +243,7 @@ function selection1(id) {
 
 function selection2(id) {
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'selectionner2',
@@ -273,7 +273,7 @@ function deleted1() {
 	var titre = $("#titre_p").val();
 	if (confirm("Voulez-vous supprimer " + titre)) {
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				"ent": "supprime",
@@ -300,7 +300,7 @@ function suppressions(id) {
 	if (confirm("Voulez-vous supprimer ce commentaire")) {
 		
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				"ent": "suppressions",
@@ -326,7 +326,7 @@ function suppression(id) {
 	if (confirm("Voulez-vous supprimer ce message")) {
 		
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				"ent": "suppression",
@@ -354,7 +354,7 @@ function deleted2() {
 	var titre = $("#titre_card").val();
 	if (confirm("Voulez-vous supprimer " + titre)) {
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				"ent": "supprimer",
@@ -383,7 +383,7 @@ function deleted() {
 	var titre = $("#Grand_titre").val();
 	if (confirm("Voulez-vous supprimer " + titre)) {
 		$.ajax({
-			url: "./model/scripts.php",
+			url: "../model/scripts.php",
 			type: "POST",
 			data: {
 				"ent": "suppr",
@@ -442,7 +442,7 @@ function actualiser() {
 function table_commentaires() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'table_commentaires'
@@ -478,7 +478,7 @@ function table_commentaires() {
 function table_messages() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'table_messages'
@@ -515,7 +515,7 @@ function table_messages() {
 function table_paragraphes() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'table_paragraphes'
@@ -551,7 +551,7 @@ function table_paragraphes() {
 function table_services() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'table_services'
@@ -588,7 +588,7 @@ function table_services() {
 function table_cards() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'table_cards'
@@ -668,7 +668,7 @@ function Afficher_commentaires() {
 function Afficher_messages() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'Afficher_messages'
@@ -750,7 +750,7 @@ function Afficher_paragraphes() {
 function Afficher_services() {
 
 	$.ajax({
-		url: "./model/scripts.php",
+		url: "../model/scripts.php",
 		type: "POST",
 		data: {
 			'ent': 'Afficher_services'
@@ -920,20 +920,40 @@ function accueil() {
 }
 
 function gerer() {
-	location.href = "./Gestion.html";
+	location.href = "./view/Gestion.html";
 }
 
 function services() {
-	location.href = "./Services.html";
+	location.href = "./view/Services.html";
 }
 
 function contacts() {
+	location.href = "./view/Contacts.html";
+}
+
+function aproposs() {
+	location.href = "./Apropos.html";
+}
+function accueils() {
+	location.href = "../index.html";
+}
+
+function gerers() {
+	location.href = "./Gestion.html";
+}
+
+function servicess() {
+	location.href = "./Services.html";
+}
+
+function contactss() {
 	location.href = "./Contacts.html";
 }
 
 function apropos() {
 	location.href = "./Apropos.html";
 }
+
 
 function gest_services() {
 	var fichier = new FormData();
@@ -965,7 +985,7 @@ function gest_services() {
 							fichier.append("detail", details);
 
 							$.ajax({
-								url: "./model/scripts.php",
+								url: "../model/scripts.php",
 								type: "POST",
 								data: fichier,
 								contentType: false,
@@ -1039,7 +1059,7 @@ function gest_card() {
 					fichier.append("details", details);
 
 					$.ajax({
-						url: "./model/scripts.php",
+						url: "../model/scripts.php",
 						type: "POST",
 						data: fichier,
 						contentType: false,
@@ -1088,7 +1108,7 @@ function gest_paragraphes() {
 		if (details != "") {
 			if (confirm("Confirmez l'ajout du paragraphe en accueil")) {
 				$.ajax({
-					url: "./model/scripts.php",
+					url: "../model/scripts.php",
 					type: "POST",
 					data: {
 						'ent': 'Ajout_paragraphe',
